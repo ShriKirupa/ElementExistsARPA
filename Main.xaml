@@ -89,19 +89,19 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="888.6666666666665,816.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="888.6666666666666,1062" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,794" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="edc15ca5-cf18-4b31-acd7-1fb78e4cc3bd">
+    <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1039.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="edc15ca5-cf18-4b31-acd7-1fb78e4cc3bd">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,552.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,797.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Username" />
             </Sequence.Variables>
@@ -122,12 +122,14 @@
                 </ui:Target>
               </ui:WaitUiElementAppear.Target>
             </ui:WaitUiElementAppear>
-            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innerhtml" DisplayName="Get Attribute 'email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[Username]" ScopeIdentifier="edc15ca5-cf18-4b31-acd7-1fb78e4cc3bd" Version="V5">
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="innerhtml" DisplayName="Get Attribute 'email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,243.33333333333334" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[Username]" ScopeIdentifier="edc15ca5-cf18-4b31-acd7-1fb78e4cc3bd" Version="V5">
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/home" CVScreenId="b2ac3db3-3789-4f5a-90b3-c5cba4100d58" ContentHash="P3KkR2m16kqgKszitJLV9g" CvTextArea="458, 575, 799, 60" CvTextArgument="220701286@rajalakshmi.edu.in" CvType="Text" DesignTimeRectangle="464, 571, 794, 60" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='STRONG' /&gt;" Guid="004feb50-5b2f-47e3-aaeb-ca7f82972a1b" InformativeScreenshot="0488de558b5da0f40439ce9463053b73.png" Reference="CiC5v9Lc9Eqpi4aieiZVkg/W1Bqe-EUUU26hy50LvFNFw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
               </uix:NGetAttributeGeneric.Target>
             </uix:NGetAttributeGeneric>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,111.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Username]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Username]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;New messages from shri kirupa!!&quot;]" />
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="416,117.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_1" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
